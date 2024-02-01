@@ -1,0 +1,85 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: DariInel
+      changes:
+        - createTable:
+            tableName: players
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: display_first_last
+                  type: varchar(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: display_last_comma_first
+                  type: varchar(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: from_year
+                  type: integer
+                  constraints:
+                    nullable: false
+              - column:
+                  name: games_played_flag
+                  type: varchar(1)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: otherleague_experience_ch
+                  type: integer
+                  constraints:
+                    nullable: false
+              - column:
+                  name: person_id
+                  type: integer
+                  constraints:
+                    nullable: false
+              - column:
+                  name: playercode
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: rosterstatus
+                  type: integer
+                  constraints:
+                    nullable: false
+              - column:
+                  name: team_abbreviation
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: team_city
+                  type: varchar(100)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: team_code
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: team_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: team_name
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: to_year
+                  type: integer
+                  constraints:
+                    nullable: false
